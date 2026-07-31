@@ -4,7 +4,7 @@
 :root {
     --background:#1d4346;
     --surface:#30576d;
-    --primary:#38f8bf;
+    --primary:#46c29d;
     --text:#F8FAFC;
     --text-light:#CBD5E1;
     --border:#407e74; 
@@ -810,3 +810,88 @@ nav a:hover{
 
 .form-status.success{ color:var(--primary); }
 .form-status.error{ color:#f87171; }
+
+
+@media (max-width: 768px){
+
+    #hero{
+        flex-direction:column;
+        text-align:center;
+        padding:100px 20px 60px;
+        gap:40px;
+    }
+
+    .hero-left h1{
+        font-size:2.5rem; 
+    }
+
+    .hero-left h2{
+        font-size:1.4rem;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .photo-frame{
+        width:100%;
+        max-width:320px;
+        height:auto;
+        aspect-ratio:3/4;
+    }
+
+    #about{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-image img{
+        width:100%;
+    }
+
+    .about-highlights,
+    .about-cards{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card{
+        padding:28px;
+    }
+
+    .modal{
+        padding:12px;
+    }
+
+    .modal-content{
+        padding:20px 16px;
+        gap:24px; 
+    }
+
+    .close-modal{
+        top:10px;
+        right:14px;
+        font-size:1.6rem;
+    }
+
+    .gallery-viewer{
+        height:260px; 
+        padding:12px;
+    }
+
+    .gallery-arrow{
+        width:42px;
+        height:42px;
+        font-size:1.1rem;
+    }
+
+    /* FORMULAIRE DE CONTACT */
+    .contact-form{
+        padding:24px 20px;
+    }
+}
